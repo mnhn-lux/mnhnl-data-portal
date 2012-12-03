@@ -1,0 +1,150 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Structure of the Collections Browser hierarchy &mdash; MNHNL Data Portal Documentation 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="MNHNL Data Portal Documentation 1.0 documentation" href="../index.html" />
+    <link rel="up" title="Collections Browser" href="index.html" />
+    <link rel="prev" title="Collections Browser" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="index.html" title="Collections Browser"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">MNHNL Data Portal Documentation 1.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Collections Browser</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="structure-of-the-collections-browser-hierarchy">
+<h1>Structure of the Collections Browser hierarchy<a class="headerlink" href="#structure-of-the-collections-browser-hierarchy" title="Permalink to this headline">¶</a></h1>
+<p>The Collections Browser uses a hierarchy that is derived from lists in the Thesaurus
+Editor to provide a means of browsing through the specimens in the collections. Rather
+than use a single list, each branch of taxonomy within the hierarchy has its own list
+which allows curators to be responsible for their own parts of the hierarchy. All the
+lists involved belong to the <strong>Weblists</strong> domain, in the <strong>General Term Lists</strong> section
+of the Thesaurus. At the very top of the hierarchy a list called <strong>Webstructure</strong>
+provides the first few levels of the browsing hierarchy, down to the point where the
+hierarchy splits into taxonomic divisions appropriate for allocation to different
+curators.</p>
+<p>As well as the Webstructure list there are then additional taxon group specific lists in
+the Weblists domain, each of which has a top-level node that exactly matches a bottom
+level node in the Webstructure list. This allows the lists to be &#8220;joined&#8221; together to
+make a single hierarchy. These taxon group specific lists only need to go down as many
+levels as the curator feels appropriate until the point where the list of species below
+the bottom level is manageable for browsing. For example, if their are many genera and
+species within a family, it might be appropriate to define a hierarchy in the group
+specific list that goes right down to genus level, so the user attempting to find a
+species needs only to look through the species in a single genus. On the other hand if
+there are only a few taxa in a family it might be appropriate to only go down as far as
+family level so the user sees all species in the family on a single browsing page. Note
+that the website will automatically show all species below whatever the bottom level is
+in the list so there is no need to add the species to the hierarchy.</p>
+<p>To illustrate this, consider the following hierarchy which the user might browse through</p>
+<div class="highlight-python"><pre>Collections &gt; Zoology Collections &gt; Vertebrates &gt; Birds &gt; Columbiformes &gt; **Columba palumbus**</pre>
+</div>
+<p>The Webstructure list might contain the following levels:</p>
+<div class="highlight-python"><pre>Collections &gt; Zoology Collections &gt; Vertebrates</pre>
+</div>
+<p>Then, there should be a list called Vertebrates which is managed by the curator of
+vertebrates in the museum. This list contains the following term hierarchy:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">Vertebrates</span> <span class="o">&gt;</span> <span class="n">Birds</span> <span class="o">&gt;</span> <span class="n">Columbiformes</span>
+</pre></div>
+</div>
+<p>The Columbiformes term must be linked to the rest of the thesaurus lists in order to
+determine which species it contains. It doesn&#8217;t matter if the other nodes in the
+hierarchy are not linked as synonyms with the equivalent terms in other lists. The term
+for <strong>Columba palumbus</strong>, along with all the other Columbiforme species which the museum
+hold specimens for, is then automatically included in the hierarchy because it can be
+determined as a child of Columbiformes via one of the other lists.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The curator in this instance could opt to add a term for Columba beneath Columbiformes
+if they want the user to browse right down to genus level, in which case they must
+ensure that the Columba term is linked correctly to the rest of the Thesaurus.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Collections Browser</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/collections-browser/weblist-structure.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="index.html" title="Collections Browser"
+             >previous</a> |</li>
+        <li><a href="../index.html">MNHNL Data Portal Documentation 1.0 documentation</a> &raquo;</li>
+          <li><a href="index.html" >Collections Browser</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, John van Breda.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
