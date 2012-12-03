@@ -9,5 +9,4 @@ of the taxa involved in the collections is available for the user to browse thro
 .. toctree::
 
   weblist-structure
-  weblist-branches
-  weblist-sp-subsp
+  weblist-images
