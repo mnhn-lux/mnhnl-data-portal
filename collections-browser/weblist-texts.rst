@@ -4,11 +4,12 @@ Adding text to nodes in the Collections Browser hierarchy
 Each term in the hierarchy used to populate the online Collections Browser should at least
 have a description associated with it to display on the page. In addition it is possible
 to optionally add a footer text to appear beneath the page, typically used to add a bit 
-of supplementary information such as an interesting fact about the taxon.
+of supplementary information such as an interesting fact about the taxon as in the 
+following example.
 
-.. todo::
-
-  Add image
+.. image:: ../images/collections-browser/collections-browser-texts.jpg
+  :width: 700px
+  :alt: Header and footer text displayed for a term in the online Collections Browser
   
 Each piece of text is added by creating a fact against a node in the Thesaurus Editor.
 If adding text to any term that originates from the Webstructure list then add the text

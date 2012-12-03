@@ -10,3 +10,4 @@ of the taxa involved in the collections is available for the user to browse thro
 
   weblist-structure
   weblist-images
+  weblist-texts

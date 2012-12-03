@@ -2,7 +2,14 @@ Adding images to the Collections Browser hierarchy
 ==================================================
 
 Images can be added to any node that will appear in the online Collections Browser
-hierarchy by using the Thesaurus Editor to add a fact to the underlying concept. For
+hierarchy by using the Thesaurus Editor to add a fact to the underlying concept as in the
+following example. 
+
+.. image:: ../images/collections-browser/collections-browser-images.jpg
+  :width: 700px
+  :alt: Images displayed for a term in the online Collections Browser
+
+For
 best results a single image should be added to each and every node that appears in the
 online Collections Browser. If adding an image to any term that originates from the
 Webstructure list then add the image as a fact in that list. For images that appear for
@@ -11,7 +18,7 @@ list in the :doc:`previous example <weblist-structure>`) then you should add the
 the taxon group specific list within the Weblists domain (e.g. the Vertebrates list).
 For the top level nodes of these lists, which are duplicated in the Webstructure list,
 please add the fact to the **Webstructure** list itself, e.g. the fact for the
-vertebrates image must go into the Webstructure list not the Vertebratest list. For
+vertebrates image must go into the Webstructure list not the Vertebrates list. For
 images associated with any species level nodes, attach the fact to the species in
 whichever list in the Thesaurus contains the most up to date information for that taxon
 group. 

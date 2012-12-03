@@ -11,6 +11,10 @@ provides the first few levels of the browsing hierarchy, down to the point where
 hierarchy splits into taxonomic divisions appropriate for allocation to different
 curators. 
 
+.. image:: ../images/collections-browser/webstructure-list-in-thesaurus.png
+  :width: 700px
+  :alt: The Webstructure list viewed from within the Thesaurus Editor
+
 As well as the Webstructure list there are then additional taxon group specific lists in
 the Weblists domain, each of which has a top-level node that exactly matches a bottom
 level node in the Webstructure list. This allows the lists to be "joined" together to
